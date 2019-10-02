@@ -1,0 +1,28 @@
+.module {
+  padding: 30px;
+  background: red;
+}
+.module1 {
+  padding: 30px;
+  background: green;
+  color: white;
+}
+.selected {
+  border: solid;
+  border-color: gray;
+}
+.border {
+  border: solid;
+  border-color: gray;
+}
+.list-items {
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.uList {
+  list-style: none;
+}
+.current {
+  background: green;
+}

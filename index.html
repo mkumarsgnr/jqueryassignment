@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand">jQuery Assignment</a>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </nav>
+    <div class="container">
+      <center>
+        <h4
+          class="my-4 alert alert-primary text-dark border"
+          data-toggle="collapse"
+          data-target="#select-ID"
+        >
+          Selecting
+        </h4>
+      </center>
+      <div id="select-ID" class="collapse">
+        <div class="bg-light text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            1. Select all of the div elements that have a class of "module".
+          </h6>
+          <div class=" py-5 d-flex  align-items-center justify-content-center">
+            <div class="module mx-2">module</div>
+            <div class="module mx-2">module</div>
+            <div class="module mx-2">module</div>
+            <div class="module mx-2">module</div>
+            <div class="module mx-2">module</div>
+          </div>
+          <div class="js-select_1 py-2 d-flex justify-content-center">
+            <button class="btn-primary btn ">Select</button>
+          </div>
+        </div>
+        <div class="bg-light  my-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            2.Come up with three selectors that you could use to get the third
+            item in the #myList unordered list. Which is the best to use? Why?
+          </h6>
+          <div class="row my-3">
+            <div class="col-md-4">
+              <div class="d-flex">
+                <ul class="uList js-list-type-1" id="myList">
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex test">
+                <ul class="uList" id="myList">
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <ul class="uList" id="myList">
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                  <li class="list-items px-2 py-2 my-2"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center mb-2">
+            <button class="btn btn-primary js-list-type-1-btn ">
+              Select 3rd
+            </button>
+          </div>
+        </div>
+        <div class="bg-light  my-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            3.Select the label for the search input using an attribute selector.
+          </h6>
+          <div class="px-5 py-5 d-flex justify-content-center mb-2 ">
+            <form class="form-inline">
+              <label for="input-search mx-1 px-1">Search:</label>
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                id="input-search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <div
+            class="show-search-label d-flex justify-content-center mb-2"
+          ></div>
+          <div class=" d-flex justify-content-center mb-2">
+            <button class="btn btn-primary js-search-btn ">
+              Show Attribute
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-light  my-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            4.Figure out how many elements on the page are hidden
+          </h6>
+          <div
+            class="px-5 py-5 d-flex justify-content-center mb-2 show-hidden-input-count"
+          ></div>
+          <input type="hidden" id="foo" name="zyx" value="bar" />
+          <input type="hidden" id="foo" name="zyx" value="bar" />
+          <input type="hidden" id="foo" name="zyx" value="bar" />
+          <input type="hidden" id="foo" name="zyx" value="bar" />
+          <input type="hidden" id="foo" name="zyx" value="bar" />
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-input-hidden-btn ">
+              Show Count
+            </button>
+          </div>
+        </div>
+        <div class="bg-light  my-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            5.Figure out how many image elements on the page have an alt
+            attribute.
+          </h6>
+          <div class="px-5 d-flex justify-content-center">
+            <img src="" alt="test" />
+            <img src="" alt="test" />
+            <img src="" alt="test" />
+          </div>
+          <div
+            class="px-5 py-5 d-flex justify-content-center mb-2 show-image-alt-count"
+          ></div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-image-alt ">
+              Show Count
+            </button>
+          </div>
+        </div>
+        <div class="bg-light  my-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            6.Select all of the odd table rows in the table body.
+          </h6>
+          <div class="px-5 d-flex justify-content-center">
+            <table class="table table-bordered	">
+              <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+                <td>col 4</td>
+              </tr>
+              <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+                <td>col 4</td>
+              </tr>
+              <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+                <td>col 4</td>
+              </tr>
+              <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+                <td>col 4</td>
+              </tr>
+            </table>
+          </div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-odd-rows ">
+              Select Odd Rows
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <center>
+        <h4
+          class="my-4 alert alert-warning text-dark border"
+          data-toggle="collapse"
+          data-target="#Traversing-ID"
+        >
+          Traversing
+        </h4>
+      </center>
+      <div id="Traversing-ID" class="collapse">
+        <div class="bg-light text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            1.Select all of the image elements on the page, log each image's alt
+            attribute.
+          </h6>
+          <div
+            class="px-5 py-5 d-flex justify-content-center mb-2 show-image-alt-val"
+          ></div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-image-alt-val ">
+              log Alt Attribute
+            </button>
+          </div>
+        </div>
+        <div class="bg-light  mt-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            2.Select the search input text box, then traverse up to the form and
+            add a class to the form.
+          </h6>
+          <div class="px-5 py-5 d-flex justify-content-center mb-2 ">
+            <form class="form-inline">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                id="input-search-2"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-search-form ">
+              Add Class
+            </button>
+          </div>
+        </div>
+        <div class="bg-light  mt-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            3.Select the list item inside #myList that has a class of "current"
+            and remove that class from it; add aclass of "current" to the next
+            list item.
+          </h6>
+          <div class="px-5 py-5 d-flex justify-content-center mb-2 ">
+            <div class="d-flex">
+              <ul class="uList js-list-type-1" id="myList2">
+                <li class="list-items px-2 py-2 my-2"></li>
+                <li class="list-items px-2 py-2 my-2 current"></li>
+                <li class="list-items px-2 py-2 my-2"></li>
+                <li class="list-items px-2 py-2 my-2"></li>
+                <li class="list-items px-2 py-2 my-2"></li>
+              </ul>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-select-next ">
+              Add Class
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <center>
+        <h4
+          class="my-4 alert alert-success text-dark border"
+          data-toggle="collapse"
+          data-target="#Manipulating-ID"
+        >
+          Manipulating
+        </h4>
+      </center>
+      <div id="Manipulating-ID" class="collapse">
+        <div class="bg-light text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            1.Add five new list items to the end of the unordered list #myList.
+          </h6>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <div class="d-flex">
+              <ul class="uList" id="myList3">
+                <li class="list-items px-2 py-2 my-2"></li>
+                <li class="list-items px-2 py-2 my-2"></li>
+              </ul>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-add-list-items ">
+              Add 5 Items
+            </button>
+          </div>
+        </div>
+        <div class="bg-light mt-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            2.Permanently remove the odd list items from #myList.
+          </h6>
+          <div class=" d-flex align-items-center justify-content-center mb-2 ">
+            <ul class="uList" id="myList4">
+              <li class="list-items px-2 py-2 my-2"></li>
+              <li class="list-items px-2 py-2 my-2"></li>
+              <li class="list-items px-2 py-2 my-2"></li>
+              <li class="list-items px-2 py-2 my-2"></li>
+              <li class="list-items px-2 py-2 my-2"></li>
+            </ul>
+          </div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-remove-odds ">
+              Remove Odds
+            </button>
+          </div>
+        </div>
+        <div class="bg-light mt-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            3.Add another h2 and another paragraph to the last div.module.
+          </h6>
+          <div class=" py-5 d-flex  align-items-center justify-content-center">
+            <div class="module1 mx-2">module</div>
+            <div class="module1 mx-2">module</div>
+            <div class="module1 mx-2">module</div>
+            <div class="module1 mx-2">module</div>
+            <div class="module1 mx-2">module</div>
+          </div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-add-elements-lDiv ">
+              Add Elements
+            </button>
+          </div>
+        </div>
+        <div class="bg-light mt-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            4.Add another option to the select element; give the option the
+            value "wednesday", and inner HTML of "Wednesday".
+          </h6>
+          <div
+            class=" d-flex my-1  mx-4 py-2  w-25  align-items-center justify-content-center mb-2 "
+          >
+            <select class=" custom-select">
+              <option selected>Open this select menu</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+              <option value="Teusday">Teusday</option>
+            </select>
+          </div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary js-add-Wednesday ">
+              Add Wednesday
+            </button>
+          </div>
+        </div>
+        <div class="bg-light mt-2 text-dark border">
+          <h6 class="my-1  mx-4 py-2 d-flex justify-content-center">
+            5.Add a new div.module to the page after the last one; put a copy of
+            one of the existing images inside of it. Note that theimages have
+            ids, which should be removed from the copy.
+          </h6>
+          <div
+            class=" d-flex my-1  mx-4 py-2    align-items-center justify-content-center mb-2 "
+          ></div>
+          <div class=" d-flex justify-content-center mb-2 ">
+            <button class="btn btn-primary ">
+              Test
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="js/jQuery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
