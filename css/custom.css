@@ -26,3 +26,6 @@
 .current {
   background: green;
 }
+.div-module {
+  display: none;
+}

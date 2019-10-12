@@ -103,4 +103,29 @@ $(document).ready(function() {
     $('option[value="Wednesday"]').remove();
     $(".custom-select").append('<option value="Wednesday">Wednesday</option>');
   });
+
+  /////////////// tabbed navigation
+  let textForTabs = [];
+  $(".js-tab-start").on("click", function() {
+    $(".div-module").map(function() {
+      textForTabs.push(
+        $(this)
+          .find("h2")
+          .text()
+      );
+    });
+    $(".nav-item").text(index => textForTabs[index]);
+    $(".nav-item").on("click", function() {
+      $(".nav-item").removeClass("active");
+      $(this).addClass("active");
+      $(".div-module").hide();
+      if ($(this).hasClass("tab-2")) {
+        $(".tab-2-data").show();
+      }
+      if ($(this).hasClass("tab-1")) {
+        $(".tab-1-data").show();
+      }
+    });
+  });
+  $(".tab-1-data").show();
 });
