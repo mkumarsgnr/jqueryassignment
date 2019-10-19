@@ -29,3 +29,12 @@
 .div-module {
   display: none;
 }
+.submenu {
+  display: none;
+}
+.images-div img {
+  display: none;
+}
+.images-div .active {
+  display: inline-block;
+}

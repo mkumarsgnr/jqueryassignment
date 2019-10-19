@@ -128,4 +128,29 @@ $(document).ready(function() {
     });
   });
   $(".tab-1-data").show();
+  ////////////////////////drop down
+  $(".show-list").hide();
+  $(".js-drop-down").on("click", function() {
+    $(".show-list").toggle();
+    $(".js-hover").hover(function() {
+      $(this)
+        .find(".submenu")
+        .toggle();
+    });
+  });
+  //////////////////////slider
+  $(".js-slider-start").on("click", function() {
+    var activeImg;
+    setInterval(function() {
+      activeImg = $(".active");
+      activeImg.removeClass("active");
+      if (!activeImg.length) {
+        console.log("finish");
+        $(".js-img")
+          .first()
+          .addClass("active");
+      }
+      activeImg.next().addClass("active");
+    }, 1000);
+  });
 });
